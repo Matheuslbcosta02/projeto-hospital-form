@@ -31,10 +31,11 @@
                 <input type="text" placeholder="Insira seu Nome" name="nome" id="Inome" required minlength="1" maxlength="35">
                 <p><label for="Iemail">Email:</label></p>
                 <input type="email" placeholder="Insira seu Email" name="email" id="Iemail" required minlength="1" maxlength="35">
-            </div>
-            <div class="dois">
                 <label for="Isenha" id="s">Senha:</label>
                 <input type="password" placeholder="Insira sua Senha" name="senha" id="Isenha" required minlength="8" maxlength="35">
+            </div>
+            <div class="dois">
+                
             </div>
         </fieldset>
 
@@ -46,6 +47,51 @@
             
                 <p><label for="Ipeso">Peso:</label></p>
                 <input type="number" name="peso" id="Ipeso" required placeholder="Insira seu Peso" step="0.1" min="0" max="500">
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado" required>
+                    <option value="" selected>-- Escolha --</option>
+                    <optgroup label="Região Norte">
+                        <option value="">Acre (AC)</option>
+                        <option value="">Amapá (AP)</option>
+                        <option value="">Amazonas (AM)</option>
+                        <option value="">Pará (PA)</option>
+                        <option value="">Rondônia (RO)</option>
+                        <option value="">Roraima (RR)</option>
+                        <option value="">Tocantins (TO)</option>
+                    </optgroup>
+                   
+                    <optgroup label="Região Nordeste">
+                        <option value="">Alagoas (AL)</option>
+                        <option value="">Bahia (BA)</option>
+                        <option value="">Ceará (CE)</option>
+                        <option value="">Maranhão (MA)</option>
+                        <option value="">Paraíba (PB)</option>
+                        <option value="">Pernambuco (PE)</option>
+                        <option value="">Piauí (PI)</option>
+                        <option value="">Rio Grande do Norte (RN)</option>
+                        <option value="">Sergipe (SE)</option>
+                    </optgroup>
+                  
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="">Distrito Federal (DF)</option>
+                        <option value="">Goiás (GO)</option>
+                        <option value="">Mato Grosso (MT)</option>
+                        <option value="">Mato Grosso do Sul (MS)</option>
+                    </optgroup>
+                   
+                    <optgroup label="Região Sudeste">
+                        <option value="">Espírito Santo (ES)</option>
+                        <option value="">Minas Gerais (MG)</option>
+                        <option value="">Rio de Janeiro (RJ)</option>
+                        <option value="">São Paulo (SP)</option>
+                    </optgroup>
+    
+                    <optgroup label="Região Sul">
+                        <option value="">Paraná (PR)</option>
+                        <option value="">Rio Grande do Sul (RS)</option>
+                        <option value="">Santa Catarina (SC)</option>
+                    </optgroup>
+                </select>
             </div>
             <div class="quatro">
                 <p><label for="Itel">Telefone:</label></p>
@@ -59,6 +105,21 @@
                         <label for="Isexfem">Feminino</label><input type="radio" name="sexo" id="Isexfem">
                     
                 </fieldset>
+                
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="idatalist" required>
+                <datalist id="idatalist">
+
+                    <option>Cozinheiro(a)</option>
+                    <option>Cabelereiro(a)</option>
+                    <option>Engenheiro(a)</option>
+                    <option>Médico(a)</option>
+                    <option>Advogado(a)</option>
+                    <option>Autônomo(a)</option>
+
+
+
+                </datalist>
             </div>
         </fieldset>
 
