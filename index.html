@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form teste</title>
+    <link rel="shortcut icon" href="imgs/google-forms.png" type="image/x-icon">
+    <link rel="stylesheet" href="form-style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>FORMULÁRIO</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOSPITAL</a></li>
+            <li><a href="#">UNIDADES</a></li>
+            <li><a href="https://github.com/Matheuslbcosta02/HTML_CSS">CONTATO</a></li>
+        </ul>
+    </nav>
+    <h2>TELA DE CADASTRO</h2>
+
+    <form action="cadastro.php" method="POST" autocomplete="off">
+
+        <fieldset class="conta">
+            <legend>Dados da Conta</legend>
+            <div class="um">
+                <p id="n"><label for="Inome">Nome:</label></p>
+                <input type="text" placeholder="Insira seu Nome" name="nome" id="Inome" required minlength="1" maxlength="35">
+                <p><label for="Iemail">Email:</label></p>
+                <input type="email" placeholder="Insira seu Email" name="email" id="Iemail" required minlength="1" maxlength="35">
+            </div>
+            <div class="dois">
+                <label for="Isenha" id="s">Senha:</label>
+                <input type="password" placeholder="Insira sua Senha" name="senha" id="Isenha" required minlength="8" maxlength="35">
+            </div>
+        </fieldset>
+
+        <fieldset class="pessoais">
+            <legend>Dados Pessoais</legend>
+            <div class="tres">
+                <p><label for="Idia">Data de Nascimento:</label></p>
+                <input type="date" required name="dia" id="Idia">
+            
+                <p><label for="Ipeso">Peso:</label></p>
+                <input type="number" name="peso" id="Ipeso" required placeholder="Insira seu Peso" step="0.1" min="0" max="500">
+            </div>
+            <div class="quatro">
+                <p><label for="Itel">Telefone:</label></p>
+                <input type="tel" name="tel" id="Itel" placeholder="Insira seu Telefone (xx)xxxx-xxxx " pattern="^\([1-9]{2}\)[9]{0,1}[6-9]{1}[0-9]{3}\-[0-9]{4}$" required>
+
+                <fieldset class="sexo">
+                    <legend>Sexo:</legend>
+                    
+                        <label for="Isexmas">Masculino</label><input type="radio" name="sexo" id="Isexmas">
+                   
+                        <label for="Isexfem">Feminino</label><input type="radio" name="sexo" id="Isexfem">
+                    
+                </fieldset>
+            </div>
+        </fieldset>
+
+        <div class="cinco">
+            <fieldset class="termos">
+                <legend>Concordo com:</legend>
+                <ul>
+                    <input type="checkbox" name="um" id="Ium"><li><label for="Ium">Termos 1</label></li>
+
+                    <input type="checkbox" name="dois" id="Idois"><li><label for="Idois">Termos 2</label></li>
+
+                    <input type="checkbox" name="tres" id="Itres"><li><label for="Itres">Termos 3</label></li>
+                </ul>
+            </fieldset>
+            <input type="submit" id="ok">
+            <input type="reset" id="reset">
+        </div>
+
+    </form>
+
+    <div class="satisfacao">
+        <p>AVALIE O NOSSO ATENDIMENTO:</p>
+        <input type="range" name="satisfacao" id="Isatisfacao" min="1" max="10" value="1"><label for="Isatisfacao">Nível de Satisfação (1 a 10)</label>
+        <img src="imgs/up-arrow.png" alt="seta para cima">
+    </div>
+
+
+    <footer>
+        Feito por Matheus Costa
+    </footer>
+
+
+
+
+
+</body>
+</html>
