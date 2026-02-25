@@ -322,7 +322,7 @@
             .quatro,
             .cinco{
                 flex-direction: column;
-                align-items: stretch;
+                flex-wrap: wrap;
             }
             input,select{
                 max-width: 100%;
@@ -346,6 +346,18 @@
                 display: block;
                 text-align: center;
                 cursor: pointer;
+            }
+            input#Inome{
+                width: 70%;
+                background-color: rgb(0, 0, 255);
+                
+                
+            }
+            input#Inome::placeholder{
+                color: white;
+            }
+            input#Inome:focus-within{
+                background-color: white;
             }
         }
 
